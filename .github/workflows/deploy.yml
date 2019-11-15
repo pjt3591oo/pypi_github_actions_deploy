@@ -1,17 +1,21 @@
-name: Upload python to twine
+name: publish-pypi
 
 on:
   push:
     branches:
-    - master
-    - releases/*
+      - master
 
 jobs:
-  upload:
+  build:
+
     runs-on: ubuntu-latest
+    
     steps:
-    - uses: actions/checkout@v1
-    - uses: yaananth/twine-upload@v1
+    - uses: actions/checkout@master
+    - name: Publish Python Package
+      uses: mariamrf/py-package-publish-action@v1.0.0
+      with:
+        python_version: '3.6.0'
       env:
-        RUNNER: ${{ toJson(runner) }}
-        SECRETS: ${{ toJson(secrets) }}
+        TWINE_PASSWORD: ${{ secrets.TWINE_PASSWORD }}
+        TWINE_USERNAME: ${{ secrets.TWINE_USERNAME }}
