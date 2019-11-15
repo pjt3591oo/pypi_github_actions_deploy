@@ -11,7 +11,7 @@ setup(
     author_email     = 'pjt3591oo@gmail.com',
     url              = 'https://github.com/pjt3591oo/pypi_github_actions_deploy',
     download_url     = '',
-    install_requires = [], # 해당 프로젝트에서 사용하는 라이브러리(설치가 필요한 라이브러리)
+    install_requires = [], 
     long_description = long_description,
     long_description_content_type = "text/markdown",
     packages         = find_packages(exclude = ['docs', 'tests*']),
