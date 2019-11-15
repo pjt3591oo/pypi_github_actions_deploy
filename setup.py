@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name             = 'Mung',
-    version          = '1.0',
+    name             = 'Pjt_Mung',
+    version          = '1.1',
     description      = 'github-actions push deploy test',
     author           = 'JeongTae Park',
     author_email     = 'pjt3591oo@gmail.com',
