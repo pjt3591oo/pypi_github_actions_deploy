@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name             = 'Pjt_Mung',
-    version          = '1.1',
+    version          = '1.2',
     description      = 'github-actions push deploy test',
     author           = 'JeongTae Park',
     author_email     = 'pjt3591oo@gmail.com',
